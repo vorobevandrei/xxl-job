@@ -1,6 +1,7 @@
 package com.xxl.job.core.biz.model;
 
 import java.io.Serializable;
+import java.io.Serial;
 
 /**
  * @author xuxueli 2020-04-11 22:27
