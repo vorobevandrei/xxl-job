@@ -6,6 +6,7 @@ import java.io.Serializable;
  * Created by xuxueli on 17/3/2.
  */
 public class HandleCallbackParam implements Serializable {
+    @Serial
     private static final long serialVersionUID = 42L;
 
     private long logId;

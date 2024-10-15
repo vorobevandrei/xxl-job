@@ -14,6 +14,10 @@
     <name>${project.artifactId}</name>
     <description>Example executor project for spring boot.</description>
     <url>https://www.xuxueli.com/</url>
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
 
 
     <dependencies>

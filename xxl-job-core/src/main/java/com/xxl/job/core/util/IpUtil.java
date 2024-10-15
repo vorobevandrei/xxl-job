@@ -30,8 +30,7 @@ public class IpUtil {
     // ---------------------- valid ----------------------
 
     private static InetAddress toValidAddress(InetAddress address) {
-        if (address instanceof Inet6Address) {
-            Inet6Address v6Address = (Inet6Address) address;
+        if (address instanceof Inet6Address v6Address) {
             if (isPreferIPV6Address()) {
                 return normalizeV6Address(v6Address);
             }

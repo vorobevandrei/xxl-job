@@ -34,8 +34,7 @@ public class WebExceptionResolver implements HandlerExceptionResolver {
 
 		// if json
 		boolean isJson = false;
-		if (handler instanceof HandlerMethod) {
-			HandlerMethod method = (HandlerMethod)handler;
+		if (handler instanceof HandlerMethod method) {
 			ResponseBody responseBody = method.getMethodAnnotation(ResponseBody.class);
 			if (responseBody != null) {
 				isJson = true;

@@ -49,9 +49,9 @@ public class GlueFactory {
 			if (clazz != null) {
 				Object instance = clazz.newInstance();
 				if (instance!=null) {
-					if (instance instanceof IJobHandler) {
+					if (instance instanceof IJobHandler handler) {
 						this.injectService(instance);
-						return (IJobHandler) instance;
+						return handler;
 					} else {
 						throw new IllegalArgumentException(">>>>>>>>>>> xxl-glue, loadNewInstance error, "
 								+ "cannot convert from instance["+ instance.getClass() +"] to IJobHandler");

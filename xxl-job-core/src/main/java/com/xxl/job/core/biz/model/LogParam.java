@@ -6,6 +6,7 @@ import java.io.Serializable;
  * @author xuxueli 2020-04-11 22:27
  */
 public class LogParam implements Serializable {
+    @Serial
     private static final long serialVersionUID = 42L;
 
     public LogParam() {
